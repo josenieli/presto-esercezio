@@ -13,6 +13,10 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
     --red: rgb(228, 32, 43);
 }
 
+body{
+    background-color: var(--black);
+    color: var(--yellow);
+}
 
 .bg-yellow{
     background-color: var(--yellow);
@@ -58,6 +62,12 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
     width: 50px;
 }
 
+.logo2{
+    width: 100px;
+    transition: 0.5s;
+}
+
+
 /* Header */
 
 .header{
@@ -93,6 +103,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
     border: 2px solid var(--black);
     cursor: pointer;
     transition: 0.5s;
+    color: var(--black);
 }
 
 .col-custom:hover{
@@ -100,4 +111,38 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
     background-color: var(--black);
     color: var(--red);
     border: 2px solid var(--red);
+}
+
+@media screen and (max-width: 600px){
+    .positioned{
+        position: static;
+    }
+}
+
+
+/* Numeri Incrementali */
+
+.number{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+/* Swiper */
+
+.swiper{
+    height: 600px;
+}
+
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

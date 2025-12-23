@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Presto</title>
+    <!-- Swiper JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +22,9 @@
     
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-md bg-black fixed-top">
-        <div class="container-fluid">
+        <div id="collapse" class="container-fluid">
             <a class="navbar-brand" href="#"><img  id="logoNavbar" src="./media/logo-y.png" alt="Logo del sito" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <img id="lightsaber" src="./media/lightsaber-y.png" class="img-fluid logo2 d-md-none" alt="Immagine spada laser" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -34,8 +37,8 @@
                         <a class="nav-link" href="#">Chi siamo</a>
                     </li>
                 </ul>
+                <div class="logo"></div>
             </div>
-            <div class="logo"></div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -58,18 +61,18 @@
     
     
     <section class="container positioned">
-        <div class="row">
-            <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
                 <i class="fa-solid fa-jedi fa-3x"></i>
                 <h3 class="my-3">lorem ipsum</h3>
                 <p class="led">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi molestiae magni blanditiis eum! Laboriosam nobis quia, provident accusantium similique earum ut corporis illum possimus, veritatis repellat autem, eos eveniet.</p>
             </div>
-            <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
                 <i class="fa-brands fa-galactic-senate fa-3x"></i>
                 <h3 class="my-3">lorem ipsum</h3>
                 <p class="led">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi molestiae magni blanditiis eum! Laboriosam nobis quia, provident accusantium similique earum ut corporis illum possimus, veritatis repellat autem, eos eveniet.</p>
             </div>
-            <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
                 <i class="fa-brands fa-galactic-republic fa-3x"></i>
                 <h3 class="my-3">lorem ipsum</h3>
                 <p class="led">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi molestiae magni blanditiis eum! Laboriosam nobis quia, provident accusantium similique earum ut corporis illum possimus, veritatis repellat autem, eos eveniet.</p>
@@ -77,17 +80,54 @@
         </div>
     </section>
     
-    
-    
     <!-- Positioned end -->
     
+    <!-- Numeri incrementali -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="https://www.radiofm.biz/wp-content/uploads/2025/07/star-wars-george-lucas-voleva-darth-maul-come-villain-trilogia-sequel-v3-812364.jpg" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="text-center">Un po' di numeri</h3>
+                
+                <p> <span class="number" id="firstNumber">0</span> Prodotti venduti</p>
+                <p> <span class="number" id="secondNumber">0</span> Clienti soddisfatti</p>
+                <p> <span class="number" id="thirdNumber">0</span> Consegne giornaliere</p>
+                
+            </div>
+        </div>
+    </section>
     
+    <!-- Numeri incrementali end -->
     
-    <!-- Foontawesome -->
-    <script src="https://kit.fontawesome.com/dd0a70f8ad.js" crossorigin="anonymous"></script>
-    <!-- Boostrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- Custom JS -->
-    <script src="./main.js"></script>
-</body>
-</html>
+    <!-- Recensioni -->
+    
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"></div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recensioni end -->
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <!-- Foontawesome -->
+        <script src="https://kit.fontawesome.com/dd0a70f8ad.js" crossorigin="anonymous"></script>
+        <!-- Boostrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script src="./main.js"></script>
+    </body>
+    </html>
